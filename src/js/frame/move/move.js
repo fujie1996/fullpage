@@ -1,9 +1,11 @@
 export default function (index) {
-  var liNodes = document.querySelectorAll("body #app .head .headMain .nav .item");
-  var pointNodes = document.querySelectorAll("html #app .content .points, body #app .content .points li");
-  var content = document.querySelector("html body #app .content");
-  var listNode = document.querySelector("html body #app .content .list");
+  var liNodes = document.querySelectorAll("html body #app .head .headMain .nav .item");
   var arrow = document.querySelector("html body #app .head .headMain .arrow");
+  var listNode = document.querySelector("html body #app .content .list");
+  var content = document.querySelector("html body #app .content");
+  var pointNodes = document.querySelectorAll("html body #app .content .points li");
+
+  content.index = index;
 
   for (var j = 0; j < liNodes.length; j++) {
     liNodes[j].classList.remove("active");

@@ -89,7 +89,6 @@ html,body {
       right: 0;
       top: 80px;
       bottom: 0;
-      background: gray;
       overflow: hidden;
       .list {
         position: absolute;
@@ -98,32 +97,44 @@ html,body {
         width: 100%;
         & > li {
           position: relative;
+          background-repeat: no-repeat;
+          background-position: center;
           div {
             @include V-H-Center();
             width: 1100px;
             height: 520px;
           }
           &.home {
+            background-image: url("../../static/img/bg1.jpg");
+
             div {
               background: pink;
             }
           }
           &.course {
+            background-image: url("../../static/img/bg2.jpg");
+
             div {
               background: orange;
             }
           }
           &.works {
+            background-image: url("../../static/img/bg3.jpg");
+
             div {
               background: lightyellow;
             }
           }
           &.about {
+            background-image: url("../../static/img/bg4.jpg");
+
             div {
               background: lightgreen;
             }
           }
           &.team {
+            background-image: url("../../static/img/bg5.jpg");
+
             div {
               background: lightblue;
             }
